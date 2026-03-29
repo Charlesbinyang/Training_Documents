@@ -417,3 +417,73 @@ Next:
 		
 	MLOps Stages :
 			
+			
+####################
+Day-2 29th Mar. 2026
+####################		
+			
+	MLOps Stages 
+	
+	MLOPs Architecture
+	
+	MLOPs Tools 
+		
+
+	Roles & Responsibilities :::
+	
+		Data Scientists 
+			
+			-> Procure Data, Process Data and Version Control Datasets 
+		
+		ML Engg.
+		
+			-> Create ML Model, Train, Register
+		
+		MLOPs Team ::::
+		
+			-> Automate end-to-end ML Model/Project Build, Test and Deployment & Monitoring
+			
+			Tools :::
+			
+				- git, github 			==> Version Control/Track the Source Code Changes 
+				
+				- DVC 					==> Version Control/Track the Dataset to train the model
+				
+				- Python 
+					- Flask/Django 
+					
+					- Streamlit			==> Web Application Framework -> ML Project
+											- Web User Interface 
+											
+					- Fast API 			==> Develop the API used in the Model
+					
+				- MLFlow				==> To Experiment the Model
+				
+				- Docker 				==> Containerize the ML Model and its dependencies
+				
+				- DockerHub 			==> Register the ML Model Container Images 
+				
+				- AWS 
+					- AWS EC2 Instances ==> Setup - Dev, Build & Target Environment
+					
+					- AWS S3 Service 	==> To Maintain the Input Dataset & Model Artifacts
+					
+				- Kubernetes			==> To deploy the Model
+					(using Kubeadm/K3s/KIND/Minikube)
+					
+				- Kubeflow 				==> Extension to Kubernetes to Automate ML Workflow on Kubernetes
+				
+				- Monitoring 
+					- Prometheus Grafana ==> Infra-Structure Monitoring
+					- MLflow 			 ==> Model Monitoring
+					
+				- github-actions		
+										==> To Create end-to-end cicd pipeline to automate the Build and Deployments of ML Model
+																				
+				- AWS Sagemaker-AI 		==> Fully Managed ML Service - With a Use Case.
+		
+					
+Lab ::
+
+	- Create GitHub Account :::
+		https://github.com/
