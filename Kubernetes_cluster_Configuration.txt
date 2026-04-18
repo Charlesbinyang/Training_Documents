@@ -280,6 +280,15 @@ worker-node   Ready    worker                 2m55s   v1.24.1
 sudo kubeadm token create --print-join-command 	# To generate New Token along with Kubeadm Join Command.
 												# Run this command on the master node
 
+############################################
+#Note By Bassey if there is a broken file (Error from TOML ) Run the following command
+#Backup the broken file :  sudo mv /etc/containerd/config.toml /etc/containerd/config.toml.bak
+#Generate a new default config : containerd config default | sudo tee /etc/containerd/config.toml
+#Set SystemdCgroup (Crucial for Kubernetes) : sudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/g' /etc/containerd/config.toml
+#Restart the service: sudo systemctl restart containerd
+ #sudo systemctl status containerd
+##########################################
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ###Only in Worker Nodes:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
